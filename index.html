@@ -1,11 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>my portfolio</h1>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <div>
+            <a href="#about">
+                <button class="button">About</button>
+            </a>
+            <a href="#skills">
+                <button class="button">Skills</button>
+            </a>
+            <a href="#projects">
+                <button  class="button">Projects</button>
+            
+            </a>
+            <a href="#contact">
+                <button class="button">Contact</button>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h1>Sai Vamsi</h1>
+            <img src="my-channel.jpeg" width="200px" >
+            <p>I am very passionate web developer with a front-end development<br>
+            I am currently pursuing my b.tech in <em>vishnu institute of technology</em><br>
+            You can <strong>click here</strong>  to check what i learnt
+            </p>
+        </section>
+        <section id="skills">
+            <h1>My Skills</h1>
+            <ol>
+                <li>Java basics</li>
+                <li>html</li>
+                <li>Css</li>
+                <li>python basics</li>
+            </ol>
+        </section>
+        <section id="projects">
+            <h1>My projects</h1>
+            <table border="1">
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>My portfolio</td>
+                    <td>i have built a portfolio using html,css,Js</td>
+                </tr>
+                <tr>
+                    <td>python</td>
+                    <td>Simple calculator</td>
+                </tr>
+            </table>
+        </section>
+        <section id="contact">
+            
+            <h1>Contact Me</h1>
+            <form>
+                <div>
+                    <p>Feel free to get in touch with me using the form below </p>
+                    <label for="name"><b>Name: </b></label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="email"><b>Email: </b></label>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="gender"><b>Choose your gender: </b></label>
+                    <input type="radio" id="gender" value="male">
+                    <label for="gender">Male</label>
+                    <input type="radio" id="gender" value="female">
+                    <label for="gender">Female</label>
+                </div>
+                <div>
+                    <label for="interests"><b>Select your interests: </b></label>
+                    <input type="checkbox" id="interests" value="coding">
+                    <label for="interests">Coding</label>
+                    <input type="checkbox" id="interests" value="reading">
+                    <label for="interests">Reading</label>
+                </div> 
+                <div>
+                    <label for="bio">Bio (up to 200 characters):</label>
+                    <input type="text">
+                </div>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+    <a href="">
+        <button class="top">TOP</button>
+    </a>
+    <footer>
+        <p>@2024 my portfolio</p>
+    </footer>
+ 
+   
+   
+
+    
 </body>
 </html>
